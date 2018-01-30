@@ -1,0 +1,16 @@
+
+<template name='product'>
+  <view class='product'>
+    <image src='{{image}}' mode='aspectFit|aspectFill'></image>
+    <view class='content'>
+      <text class='name'>{{title}}</text>
+      <view class='price'>
+        <text class='now-price'>￥{{price}}</text>
+        <!--原价 <text class='old-price'>￥18</text> -->
+        <view class='num'>已售出{{review_num}}件</view>
+      </view>
+    </view>
+  </view>
+</template>
+
+

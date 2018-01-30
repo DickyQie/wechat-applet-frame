@@ -1,0 +1,45 @@
+<import src="../template/homeglist-tpl.wxml" />
+
+
+<view>
+  <swiper class="home-swiper" indicator-dots='true' autoplay='true' interval='5000' duration='500' indicator-active-color='white'>
+    <block wx:for="{{imageUrl}}">
+        <swiper-item>
+            <image src="{{item.image}}" catchtap='toDetailsTap' data-id="{{item.id}}" mode='aspectFit|aspectFill' class="home-swiper-img"></image>
+        </swiper-item>
+    </block>
+  </swiper>
+</view>
+
+
+
+<view class="pin-menus">
+    <view class='menus-model'>
+        <block wx:for="{{menu}}">
+          <view class='model-li' bindtap='showMenu'>
+            <image src="{{item.url}}"></image>
+            <view class="t">{{item.name}}</view>
+          </view>
+        </block>
+    </view>       
+</view>
+
+
+<view class='home-shop-grid'></view>
+
+
+<view class='home-section-title'><view class='len1'></view>歆语推荐<view class='len2'></view></view>
+
+
+
+<view class='home-goods-list'>
+  <view class='product-list'>
+    <block wx:for='{{dataList}}' wx:for-item='item'>
+      <view catchtap='toDetailsTap' data-id="{{item.itemid}}">
+        <template is='product' data='{{...item}}' />
+      </view>
+    </block>
+  </view>
+</view>
+
+

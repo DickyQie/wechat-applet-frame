@@ -1,0 +1,32 @@
+{
+  "pages":[
+    "pages/home/home",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#00C858",
+    "navigationBarTitleText": "请求和加密",
+    "navigationBarTextStyle": "while"
+  },
+  "tabBar": {
+    "color": "gray",
+    "selectedColor": "#00C858",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "selectedIconPath": "pages/image/icon_home_active.png",
+        "iconPath": "pages/image/icon_home_normal.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "我的",
+        "selectedIconPath": "pages/image/icon_my_active.png",
+        "iconPath": "pages/image/icon_my_normal.png"
+      }
+    ]
+  }
+}
